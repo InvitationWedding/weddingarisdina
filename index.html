@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Wedding Aris & Dina</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+
+	<!-- Link Tambahan -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+	</head>
+	<body>
+
+	<div class="buttoncontainermusic">
+		<button class="fixedbuttonmusic" onclick="imagefun(), togglePlay()">
+			<img src="images/icon_play.png" id="getImage">
+		</button>
+	</div>
+
+	<div class="buttoncontainer">
+		<button class="fixedbutton" onclick="location.href='#Mempelai'">
+			<img src="images/icon_mempelai.png" style="height: 44px; width: 44px;">
+		</button>
+		<button class="fixedbutton" onclick="location.href='#Acara'">
+			<img src="images/icon_acara.png" style="height: 36px; width: 36px;">
+		</button>
+		<button class="fixedbutton" onclick="location.href='#Galeri'">
+			<img src="images/icon_galeri.png">
+		</button>
+		<button class="fixedbutton" onclick="location.href='#AmplopOnline'">
+			<img src="images/icon_amploponline.png">
+		</button>
+
+	</div>
+		
+	<div class="fh5co-loader"></div>
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
+				</div>
+				<div class="col-xs-10 text-right menu-1">
+					<ul>
+						<li><a href="#Mempelai">Mempelai</a></li>
+						<li><a href="#Acara">Acara</a></li>
+						<li><a href="#Galeri">Galeri</a></li>
+						<li><a href="#AmplopOnline">Amplop Online</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div id="top"></div>
+	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpg); height: 800px;" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<h1 style="padding-top: 200px">Aris &amp; Dina</h1>
+							<h2 id="marryText"></h2>
+							<div class="simply-countdown simply-countdown-one" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+								<div class="simply-section simply-days-section" style="margin-bottom: 7px;">
+									<span class="simply-amount" id="days" style="line-height: 80px; height: 70px;"></span>
+									<span class="simply-word" style="line-height: 0px;">days</span>
+								</div>
+								<div class="simply-section simply-hours-section" style="margin-bottom: 7px;">
+									<span class="simply-amount" id="hours" style="line-height: 80px; height: 70px;"></span>
+									<span class="simply-word" style="line-height: 0px;">hours</span>
+								</div>
+								<div class="simply-section simply-minutes-section" style="margin-bottom: 7px;">
+									<span class="simply-amount" id="minutes" style="line-height: 80px; height: 70px;"></span>
+									<span class="simply-word" style="line-height: 0px;">minutes</span>
+								</div>
+								<div class="simply-section simply-seconds-section" style="margin-bottom: 7px;">
+									<span class="simply-amount" id="seconds" style="line-height: 80px; height: 70px;"></span>
+									<span class="simply-word" style="line-height: 0px;">seconds</span>
+								</div>
+							</div>
+							<p><a href="https://maps.app.goo.gl/yQW7cCpcBEKdZnxq7" class="btn btn-default btn-sm" target="_blank">To Location</a></p>
+							<audio id="myAudio" controls loop  style="display: none;">
+								<source src="newadded/backsound.mp3" type="audio/mp3">
+							</audio>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div id="fh5co-couple">
+		<div id="Mempelai"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2>Wedding Couple</h2>
+					<h3>Assalamu'alaikum Warahmatullahi Wabarakaatuh</h3>
+					<p>Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan.<br>Ya Allah semoga ridho-Mu tercurah mengiringi pernikahan kami :</p>
+				</div>
+			</div>
+			<div class="couple-wrap animate-box">
+				<div class="couple-half">
+					<div class="groom">
+						<img src="images/groom.jpg" alt="groom" class="img-responsive">
+					</div>
+					<div class="desc-groom">
+						<h3>Aris Septian</h3>
+						<p style="font-weight: 600; margin-bottom: 0;">Putra Kedua</p>
+						<p>Bapak Iskandar & Ibu Neneng Maryamah</p>
+					</div>
+				</div>
+				<p class="heart text-center"><i class="icon-heart2"></i></p>
+				<div class="couple-half">
+					<div class="bride">
+						<img src="images/bride.jpg" alt="groom" class="img-responsive">
+					</div>
+					<div class="desc-bride">
+						<h3>Dina Yunita Sari</h3>
+						<p style="font-weight: 600; margin-bottom: 0;">Putri Pertama</p>
+						<p>Bapak Syarfudin & Ibu Dewi Erlina</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/img_bg_3.jpg);">
+		<div id="Acara"></div>
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<span>Our Special Events</span>
+					<h2>Wedding Events</h2>
+					<p style="color: rgba(255, 255, 255, 0.5);">"Tanpa mengurangi rasa hormat, kami bermaksud mengundang bapak/ibu untuk menghadiri pernikahan kami"</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="col-md-6 col-sm-6 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Akad Nikah</h3>
+									<div class="event-col">
+										<i class="icon-clock"></i>
+										<span>8:30 AM</span>
+										<span>10:00 AM</span>
+									</div>
+									<div class="event-col">
+										<i class="icon-calendar"></i>
+										<span>Minggu</span>
+										<span>18 September 2022</span>
+									</div>
+									<i class="icon-map"></i>
+									<p>Perumahan Griya Sebalang, Tarahan, Kec. Katibung, Kabupaten Lampung Selatan, Lampung.</p>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Resepsi</h3>
+									<div class="event-col">
+										<i class="icon-clock"></i>
+										<span>10:00 AM</span>
+										<span>Selesai</span>
+									</div>
+									<div class="event-col">
+										<i class="icon-calendar"></i>
+										<span>Minggu</span>
+										<span>18 September 2022</span>
+									</div>
+									<i class="icon-map"></i>
+									<p>Perumahan Griya Sebalang, Tarahan, Kec. Katibung, Kabupaten Lampung Selatan, Lampung.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="fh5co-gallery" class="fh5co-section-white">
+		<div id="Galeri"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<span>Our Memories</span>
+					<h2>Wedding Gallery</h2>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-md">
+				<div class="col-md-12">
+					<ul id="fh5co-gallery-list">
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-1.jpg); "> 
+							<a class="color-2" data-toggle="modal"data-target="#preview01"></a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-2.jpg); ">
+							<a class="color-2" data-toggle="modal"data-target="#preview02"></a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-3.jpg); ">
+							<a class="color-3" data-toggle="modal"data-target="#preview03"></a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-4.jpg); ">
+							<a class="color-4" data-toggle="modal"data-target="#preview04"></a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-5.jpg); ">
+							<a class="color-3" data-toggle="modal"data-target="#preview05"></a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-6.jpg); ">
+							<a class="color-4" data-toggle="modal"data-target="#preview06"></a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-7.jpg); ">
+							<a class="color-4" data-toggle="modal"data-target="#preview07"></a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-8.jpg); "> 
+							<a class="color-5" data-toggle="modal"data-target="#preview08"></a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-9.jpg); ">
+							<a class="color-6" data-toggle="modal"data-target="#preview09"></a>
+						</li>
+					</ul>		
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="blackOut" style="display: none; z-index: 1000;">
+		<div class="popupAlignCenter"></div>
+	</div>
+	<div id="fh5co-services" class="fh5co-section-gray">
+		<div class="container">
+			<div class="row animate-box" style="height: 100px;">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Our Video</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 animate-box">
+					<div class="fh5co-video fh5co-bg videoPopup" style="background-image: url(images/img_bg_4.jpg); ">
+						<a href="javascript:void(0)" onclick="videoPopupItem.launchPopUp();">
+							<i class="icon-video2"></i>
+						</a>
+						<div class="overlay"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2 style="margin-top: 40px;">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ</h2>
+					<p style="color: rgba(255, 255, 255, 0.7);">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu merasa tenang dan tentram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.”<br>(QS. Ar-Rum: 21)</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="fh5co-couple-story">
+		<div id="AmplopOnline"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2>Wedding Gift</h2>
+					<p>Doa restu keluarga, sahabat, rekan-rekan semua sudah sangat cukup sebagai hadiah, tetapi jika memberi merupakan tanda kasih, kami dengan senang hati menerimanya dan melengkapi kebahagiaan kami.<br><br> Silahkan klik tombol dibawah ini. Terimakasih.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 animate-box">
+					<div style="display: flex; justify-content: center; align-items: center; align-content: center; text-align: center;">
+						<div class="col-md-5 col-sm-5">
+							<button class="btn btn-default btn-block" style="height: 54px; border: none !important; background: #F14E95; color: #fff; font-size: 16px; text-transform: uppercase; font-weight: 400; padding-left: 50px; padding-right: 50px;"  data-toggle="modal"data-target="#weddinggift">Kirim Hadiah 
+								<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+									<path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<footer id="fh5co-footer" role="contentinfo" class="fh5co-section-gray">
+		<div class="container">
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2022 BrainGenius. All Rights Reserved.</small> 
+						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> & <a href="https://m.facebook.com/profile.php?id=100001248115091" target="_blank">BrainGenius.</a></small>
+					</p>
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="http://vk.com/id421502350" target="_blank"><i class="icon-vk"></i></a></li>
+							<li><a href="https://m.facebook.com/profile.php?id=100001248115091" target="_blank"><i class="icon-facebook"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UCn-ssqeIT4H6Iq6Qk9TJ5bg/" target="_blank"><i class="icon-youtube"></i></a></li>
+							<li><a href="https://pin.it/7K7DVZC" target="_blank"><i class="icon-pinterest"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</div>
+
+
+	<!-- Body Tambahan -->
+	<div class="modal fade" id="weddinggift" tabindex="-1" role="dialog"aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content container-fluid" style="background-color: #F14E95;">
+				<!-- Add image inside the body of modal -->
+				<div class="modal-body">
+					<div class="containerinmodal" style="width: 100%; max-width: 320px;">
+						<div class="modaltitle">
+							<img class="wrapper" id="image" style="padding: 3px; height: 30px; float: right;" src="images/weddinggift-dana.png" alt="Click on button"/>
+						</div>
+						<hr width="100%" color="black" style="height: 2px; margin: 0px;"/>
+						<img class="wrapper" id="image" style="padding: 3px; width: 100%;" src="images/weddinggift-qrcode.jpg" alt="Click on button"/>
+					</div>
+					<div class="containerinmodal" style="width: 100%; max-width: 320px;">
+						<div class="modaltitle">
+							<img class="wrapper" id="image" style="padding: 3px; height: 30px; float: right;" src="images/weddinggift-bankbri.png" alt="Click on button"/>
+						</div>
+						<hr width="100%" color="black" style="height: 2px; margin: 0px;"/>
+						<h5 style="margin-bottom: 0px;font-family: times; font-weight: 400; font-size: 16px; line-height: 1.7; color: #000000;">No. Rekening: 356101038672537</h5>
+						<h3 style="margin-bottom: 5px; font-family: bold;">An. Dewi Erlina</h3>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="preview01" tabindex="-1" role="dialog"aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content container-fluid">
+				<!-- Add image inside the body of modal -->
+				<div class="modal-body">
+					<img class="wrapper" id="image" src="images/gallery-1.jpg" alt="Click on button"/>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="preview02" tabindex="-1" role="dialog"aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content container-fluid">
+				<!-- Add image inside the body of modal -->
+				<div class="modal-body">
+					<img class="wrapper" id="image" src="images/gallery-2.jpg" alt="Click on button"/>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="preview03" tabindex="-1" role="dialog"aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content container-fluid">
+				<!-- Add image inside the body of modal -->
+				<div class="modal-body">
+					<img class="wrapper" id="image" src="images/gallery-3.jpg" alt="Click on button"/>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="preview04" tabindex="-1" role="dialog"aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content container-fluid">
+				<!-- Add image inside the body of modal -->
+				<div class="modal-body">
+					<img class="wrapper" id="image" src="images/gallery-4.jpg" alt="Click on button"/>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="preview05" tabindex="-1" role="dialog"aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content container-fluid">
+				<!-- Add image inside the body of modal -->
+				<div class="modal-body">
+					<img class="wrapper" id="image" src="images/gallery-5.jpg" alt="Click on button"/>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="preview06" tabindex="-1" role="dialog"aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content container-fluid">
+				<!-- Add image inside the body of modal -->
+				<div class="modal-body">
+					<img class="wrapper" id="image" src="images/gallery-6.jpg" alt="Click on button"/>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="preview07" tabindex="-1" role="dialog"aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content container-fluid">
+				<!-- Add image inside the body of modal -->
+				<div class="modal-body">
+					<img class="wrapper" id="image" src="images/gallery-7.jpg" alt="Click on button"/>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="preview08" tabindex="-1" role="dialog"aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content container-fluid">
+				<!-- Add image inside the body of modal -->
+				<div class="modal-body">
+					<img class="wrapper" id="image" src="images/gallery-8.jpg" alt="Click on button"/>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="preview09" tabindex="-1" role="dialog"aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content container-fluid">
+				<!-- Add image inside the body of modal -->
+				<div class="modal-body">
+					<img class="wrapper" id="image" src="images/gallery-9.jpg" alt="Click on button"/>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+	<script src="js/simplyCountdown.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+
+	<!-- Script Tambahan -->
+	<script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("Sep 18, 2022 8:30:00").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+		// Get today's date and time
+		var now = new Date().getTime();
+
+		// Find the distance between now and the count down date
+		var distance = countDownDate - now;
+
+		// Time calculations for days, hours, minutes and seconds
+		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+		// Output the result in an element
+		document.getElementById("days").innerHTML = days;
+		document.getElementById("hours").innerHTML = hours;
+		document.getElementById("minutes").innerHTML = minutes;
+		document.getElementById("seconds").innerHTML = seconds;
+		document.getElementById("marryText").innerHTML = "We Are Getting Married";
+
+		// If the count down is over, write some text 
+		if (days <= 0 && hours >= -1 && minutes >= -30 && seconds <= 0) {
+			document.getElementById("days").innerHTML = "0";
+			document.getElementById("hours").innerHTML = "0";
+			document.getElementById("minutes").innerHTML = "0";
+			document.getElementById("seconds").innerHTML = "0";
+			document.getElementById("marryText").innerHTML = "We Got Married";
+		} 
+
+		else if (distance < 0) {
+			document.getElementById("days").innerHTML = "0";
+			document.getElementById("hours").innerHTML = "0";
+			document.getElementById("minutes").innerHTML = "0";
+			document.getElementById("seconds").innerHTML = "0";
+			document.getElementById("marryText").innerHTML = "We Are Married";
+		}
+	}, 1000);
+	</script>
+
+	<script id="rendered-js">
+	function videoPopup(objectName, videoUrl) {
+		this.videoUrl = videoUrl;
+		this.screenSize = $(window).width();
+		this.heightOfVideo = this.screenSize * .4;
+		this.videoPop = 
+		'<div class="popUpWrapper">' + '<div id="videoWrap">' + '<button type="button" class="videoClose" onclick="' + objectName + '.closeVideo()" style="color:#F14E95">Close</button>' + '<iframe width="100%" height="500px" src="' + this.videoUrl + '" frameborder="0" allowfullscreen></iframe></div>' +
+		'</div>',
+		this.closeVideo = function () {
+			$('.blackOut').fadeOut('slow');
+			$('.popupAlignCenter').html("");
+		},
+		this.launchPopUp = function () {
+			$(window).scroll(function () {return false;});
+			if ($('.blackOut').css('display') == "none") {
+				$('.blackOut').fadeIn('slow');
+			}
+			$('.blackOut').css('z-index', '1000');
+			$('.popupAlignCenter').html(this.videoPop);
+			$('.popUpWrapper').fadeIn('slow');
+		};
+	};
+
+	$(document).mouseup(function (e) {
+		var container = $(".popUpWrapper");
+		if ($('.blackOut').css('z-index') != "0") {
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+				$('.blackOut').fadeOut('slow');
+			}
+		}
+	});
+
+	var videoPopupItem = new videoPopup('videoPopupItem', 'https://www.youtube.com/embed/PLJm2jo9WW4');
+	</script>
+
+	<script>
+        function imagefun() {
+            var Image_Id = document.getElementById('getImage');
+            if (Image_Id.src.match("images/icon_play.png")) {
+                Image_Id.src = "images/icon_pause.png";
+            }
+            else {
+                Image_Id.src = "images/icon_play.png";
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        var myAudio = document.getElementById("myAudio");
+        var isPlaying = false;
+
+        function togglePlay() {
+            isPlaying ? myAudio.pause() : myAudio.play();
+        };
+
+        myAudio.onplaying = function() {
+            isPlaying = true;
+        };
+        myAudio.onpause = function() {
+            isPlaying = false;
+        };
+    </script>
+
+    <script type="text/javascript">
+    	var vid = document.getElementById("myAudio");
+		vid.volume = 1;
+    </script>
+
+	</body>
+</html>
+
